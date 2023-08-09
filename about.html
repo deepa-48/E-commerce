@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>About Us-Classy Fashion</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https;//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+.about{
+  height: 700px;
+  width: 500px;
+  background: rgba(0,0,0,.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 0 20px; 
+}
+.pic{
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-position: center;
+  background: black;
+  border-radius: 50px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.about h1{
+  color: white;
+  margin-top: 50px;
+}
+.about p{
+  color: white;
+  margin-top: 40px;
+  font-size: large; 
+}
+.btnn{
+  background: no-repeat;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 7px 15px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 30px;
+}
+.btnn:hover{
+  background: white;
+  color: black;
+}
+
+  </style>
+</head>
+<body>	
+<div class="container">
+  <div class="navbar">
+  	<div class="logo">
+  		<img src="F:/logo.jpg" width="90px">
+  	</div>
+  	<nav>
+  		<ul id="menuitems">
+  		 <li><a href="part1.html"> Home </a></li>
+  		 <li><a href="products.html"> Products </a></li>
+  		 <li><a href=""> About </a></li>
+  		 <li><a href=""> Contact </a></li>
+  		 <li><a href="accountt.html"> Account </a></li>
+  		</ul>
+  	</nav>
+  	<a href="cart.html"><img src="F:/b.jpg" width="30px" height="30px" class="m"></a>
+    <img src="F:/new-add-lists-list-item-512.png" class="menu" onclick="menutoggle()">
+  </div>     
+</div>
+<!---------About Us--------->
+<div class="about">
+  <center>
+    <h1>About Us</h1>
+    <img src="F:/deepu.jpg" class="pic">
+    <div>
+      <p>
+        Touch Screen TFT: capacitive touch screen phone function:GSM/GPRS 850/900/1800/1900MHz,call SMS Local SMS,Phone SMS.Bluetooth synchronization Entertainment MP3MP4,Bluetooth music playing phone calls reminding ring and shake,clock display 3 set of display clock ,free switch,Two-Way anti lost Anti Lost reminder,two way search.Touch Screen TFT: capacitive touch screen phone function:GSM/GPRS 850/900/1800/1900MHz,call SMS Local SMS,Phone SMS.Bluetooth synchronization Entertainment MP3MP4,Bluetooth music playing phone calls reminding ring and shake,clock display 3 set of display clock ,free switch,Two-Way anti lost Anti Lost reminder,two way search.Touch Screen TFT: capacitive touch screen phone function:GSM/GPRS 850/900/1800/1900MHz,call SMS Local SMS,Phone SMS.Bluetooth synchronization Entertainment MP3MP4,Bluetooth music playing phone calls reminding ring and shake,clock display 3 set of display clock ,free switch,Two-Way anti lost Anti Lost reminder,two way search.
+      </p>
+      <button class="btnn"> Read More </button>
+    </div>
+  </center>
+</div>
+
+
+<!--------js for toggle menu------->
+<script>
+  var menuitems = document.getElementById("menuitems");
+  menuitems.style.maxHeight ="0px";
+  function menutoggle(){
+    if(menuitems.style.maxHeight == "0px")
+    {
+      menuitems.style.maxHeight = "200px";
+    }
+    else{
+      menuitems.style.maxHeight = "0px";
+    }
+  }
+</script>
+</body>
+</html>
